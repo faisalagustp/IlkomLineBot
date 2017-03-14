@@ -15,6 +15,9 @@ def home(request):
         signature = request.META.get("X-Line-Signature")
     body = request.body
 
+    print signature
+    print body
+
     try:
         events = webhook_parser.parse(body, signature)
         for event in events:

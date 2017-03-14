@@ -11,12 +11,9 @@ def home(request):
     line_bot_api = LineBotApi(LINE_CAT)
     webhook_parser = WebhookParser(LINE_CS)
     signature = ""
-    if request.META.get("X-Line-Signature"):
-        signature = request.META.get("X-Line-Signature")
+    if request.META["HTTP_X_LINE_SIGNATURE"]:
+        signature = request.META["HTTP_X_LINE_SIGNATURE"]
     body = request.body
-
-    print signature
-    print body
 
     try:
         events = webhook_parser.parse(body, signature)

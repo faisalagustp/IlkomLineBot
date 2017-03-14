@@ -4,7 +4,9 @@ from linebot import LineBotApi, WebhookParser
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 from lineBot.settings import LINE_CAT, LINE_CS
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def home(request):
     line_bot_api = LineBotApi(LINE_CAT)
     webhook_parser = WebhookParser(LINE_CS)

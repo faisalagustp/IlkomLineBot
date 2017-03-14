@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'interaction',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+LINE_CAT = "X+7A8YaI/W70dgE0a8f+VpxDboZ3YwEUMgIi7myq0fafupI0dYjzyH+tu90y++DZmU4zGJ691zFWdwD71/saM9KH3BT6MNRkufzVJPWs3ja02v9IBdmsfSlTBbWyBV2/Q4tSpixQ82o+QkYWRVO1CwdB04t89/1O/w1cDnyilFU="
+LINE_CS = "2e450d12a2512e35a89bd0ccfd1bf4c7"
+

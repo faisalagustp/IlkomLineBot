@@ -18,8 +18,8 @@ def home(request):
     try:
         events = webhook_parser.parse(body, signature)
         for event in events:
-            print event.replyToken
-            line_bot_api.reply_message(event.replyToken, TextSendMessage(text=event.message.text))
+            print event.reply_token
+            line_bot_api.reply_message(event.reply_token, TextSendMessage(text=event.message.text))
     except InvalidSignatureError:
         return HttpResponse("Signature invalid")
 

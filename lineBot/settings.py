@@ -120,6 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-LINE_CAT = "X+7A8YaI/W70dgE0a8f+VpxDboZ3YwEUMgIi7myq0fafupI0dYjzyH+tu90y++DZmU4zGJ691zFWdwD71/saM9KH3BT6MNRkufzVJPWs3ja02v9IBdmsfSlTBbWyBV2/Q4tSpixQ82o+QkYWRVO1CwdB04t89/1O/w1cDnyilFU="
-LINE_CS = "2e450d12a2512e35a89bd0ccfd1bf4c7"
+LINE_CAT = "L3Y4RxobSetl9EaLOJVnBTpqFTbTTXmVmOnv7/GqJVuTGAjgLDVLCrQ0abUzoLe+Gs7iRc5BBndi4KabHLlgHqHE+UPUkyCLlKE0+Nkgh03MIxdnxTUx6su72dwFZA5+Cm1ItqilFMnwN0YL1q1RvQdB04t89/1O/w1cDnyilFU="
+LINE_CS = "f362c1c74199b319be83c6f3f910c406"
 

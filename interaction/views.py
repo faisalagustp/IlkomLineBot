@@ -18,10 +18,9 @@ def home(request):
     try:
         events = webhook_parser.parse(body, signature)
         for event in events:
-            print event
-            line_bot_api.reply_message(event.reply_token, TextSendMessage(text=event.message.text))
+            print event.replyToken
+            line_bot_api.reply_message(event.replyToken, TextSendMessage(text=event.message.text))
     except InvalidSignatureError:
-        print "Masuk Sini"
         return HttpResponse("Signature invalid")
 
     return HttpResponse("")
